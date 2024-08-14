@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" data-th-href="@{'css/output.css'}">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    </style>
+</head>
+<body>
+    <div class ="container bg-gray-200 w-1/2 p-4 mx-auto mt-4 flex flex-col items-center space-y-3 ">
+        <h1 class ="text-2xl font-bold" data-th-text="${name}">Welcome to home  page</h1>
+        <p class = "text-xl text-gray-700">Youtube channel : <span data-th-text="${youtube}"></span></p>
+        <p>git repo link : <span data-th-text="${git}"></span></p>
+
+        <a data-th-href="${git}">Click here to open</a>
+
+        <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus rem repellendus quae sit ducimus. 
+            Tenetur provident accusamus consequatur quod est vitae rem, error officiis dolores
+             iusto neque eveniet nisi reiciendis.</p>
+             <div><button class="px-3 rounded  bg-blue-600 text-white hover:bg-blue-700">Click here</button></div>
+    </div>
+    <!-- flow bite content -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</body>
+</html>
